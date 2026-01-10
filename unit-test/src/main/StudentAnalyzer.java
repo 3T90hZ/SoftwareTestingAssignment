@@ -17,4 +17,22 @@ public class StudentAnalyzer
         }
         return excellentStudentCount;
     }
+
+    public double calculateValidAverage(List<Double> scores) {
+        if(scores.isEmpty()) {
+            return 0.0;
+        }
+        int validScoreCount = 0;
+        double sum = 0.0;
+        for(Double score : scores) {
+            if(score >=0.0 && score <= 10.0) {
+                validScoreCount += 1;
+                sum += score;
+            }
+        }
+        if(validScoreCount == 0) {
+            return 0.0;
+        }
+        return sum/validScoreCount;
+    }
 }
