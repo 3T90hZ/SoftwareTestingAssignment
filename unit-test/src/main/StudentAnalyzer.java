@@ -34,7 +34,8 @@ public class StudentAnalyzer
         if(validScoreCount == 0) {
             return 0.0;
         }
-        return sum/validScoreCount;
+        double average = sum/validScoreCount;
+        return Math.round(average * 100.0) / 100.0;
     }
     public static void  main(String[] args)
     {
