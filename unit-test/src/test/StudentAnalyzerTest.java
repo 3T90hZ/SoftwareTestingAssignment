@@ -17,6 +17,16 @@ class StudentAnalyzerTest {
     }
 
     @Test
+    void testCoundExcellentStudentsAllScoresInvalid() {
+        assertEquals(0, analyzer.countExcellentStudents(Arrays.asList(-1.0, -5.0, 11.5, 15.0)));
+    }
+
+    @Test
+    void testCalculateValidAverageAllInvalidScore(){
+        assertEquals(0.00, analyzer.calculateValidAverage(Arrays.asList(-1.0, 11.5, -3.0)));
+    }
+    
+    @Test
     void testCountExcellentStudentsEmptyList() {
         assertEquals(0, analyzer.countExcellentStudents(Collections.emptyList()));
     }
@@ -29,5 +39,15 @@ class StudentAnalyzerTest {
     @Test
     void testCalculateValidAverageEmptyList() {
         assertEquals(0.00, analyzer.calculateValidAverage(Collections.emptyList()));
+    }
+
+    @Test
+    void testCalculateValidAverageBoundaryValues() {
+        assertEquals(9.00, analyzer.calculateValidAverage(Arrays.asList(0.0, 10.0, -0.1, 10.1)));
+    }
+
+    @Test
+    void testCountExcellentStudentsBoundaryValues(){
+        assertEquals(2, analyzer.countExcellentStudents(Arrays.asList(8.0, 10.0, 7.9, 10.1)));
     }
 }
