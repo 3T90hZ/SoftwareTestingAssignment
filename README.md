@@ -40,7 +40,7 @@ Xây dựng chương trình Java phân tích điểm số của học sinh/lớp
 
 ### 3. Cấu trúc thư mục dự án
 ```text
-SoftwareTestingAssignment/
+unit-test/
 ├── src/
 │   ├── main/
 │   │   └── java/
@@ -48,9 +48,7 @@ SoftwareTestingAssignment/
 │   └── test/
 │       └── java/
 │           └── StudentScoreAnalyzerTest.java
-├── pom.xml
 ├── README.md
-└── images/
 └── cantunsee-result.png
 ```
 ---
@@ -80,11 +78,11 @@ void testCountExcellentStudents(String scoresStr, int expected) {
     // ... code test
 }
 ```
-5. Hướng dẫn chạy dự án
+### 5. Hướng dẫn chạy dự án
 
 Clone repository
 
-Bashgit clone https://github.com/username/ten-repo-cua-ban.git
+Bashgit clone https://github.com/3T90hZ/SoftwareTestingAssignmen
 
 Mở dự án bằng IntelliJ IDEA / VS Code
 Cài đặt dependencies (nếu dùng Maven)
@@ -95,3 +93,37 @@ Chạy toàn bộ test
 
 Bashmvn test
 Hoặc chạy từng test class trong IDE.
+## Bài 3: Kiểm thử với Cypress
+## ⚡ Khởi chạy
+
+### 1. Yêu cầu
+
+- Node.js ≥ 18
+- npm or yarn
+
+### 2. Cài đặt và chạy
+
+```bash
+# trong thư mục Cypress-excercise 
+npm install
+# hoặc
+yarn install
+# mở Cypress Test Runner
+npm run cy:open
+# hoặc
+yarn cy:open
+
+# chạy tất cả các test
+npm run cy:run
+# hoặc
+yarn cy:run
+
+# chay một tệp nhất định
+npx cypress run --spec "cypress/e2e/login.cy.js"
+```
+### 3. Kết quả kiểm thử
+`cart_spec.cy.js`:
+<img width="551" height="391" alt="{5B235C97-5852-42FC-9D73-608B45E31E90}" src="https://github.com/user-attachments/assets/e0b73ab1-bdb0-4853-bb07-cf3d1dcdb633" />
+
+`login_spec.cy.js
+<img width="566" height="355" alt="image" src="https://github.com/user-attachments/assets/3e52c909-70a7-402c-bf1f-74af23e43e35" />
