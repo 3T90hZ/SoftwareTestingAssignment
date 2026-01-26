@@ -1,7 +1,10 @@
-# BÀI TẬP / ĐỒ ÁN KIỂM THỬ PHẦN MỀM
+# BÀI TẬP MÔN KIỂM THỬ PHẦN MỀM
 
 ---
+Họ và tên: Trần Tiến Thành
+Mã sinh viên: BCS230081
 
+---
 ## Bài 1: Đánh giá giao diện trên trang Can't Unsee
 
 Hình ảnh kết quả đánh giá giao diện người dùng trên website **Can't Unsee**:
@@ -36,7 +39,8 @@ Xây dựng chương trình Java phân tích điểm số của học sinh/lớp
 ---
 
 ### 3. Cấu trúc thư mục dự án
-kiem-thu-phan-mem/
+```text
+SoftwareTestingAssignment/
 ├── src/
 │   ├── main/
 │   │   └── java/
@@ -48,8 +52,7 @@ kiem-thu-phan-mem/
 ├── README.md
 └── images/
 └── cantunsee-result.png
-text---
-
+```
 ---
 
 ### 4. Nội dung chính
@@ -92,11 +95,3 @@ Chạy toàn bộ test
 
 Bashmvn test
 Hoặc chạy từng test class trong IDE.
-
-6. Thành viên thực hiện
-
-Họ và tên: Thành Nguyễn
-Mã sinh viên: [nhập mã SV của bạn]
-Lớp: [nhập lớp]
-Môn học: Kiểm thử phần mềm
-Giảng viên hướng dẫn: [tên giảng viên]
